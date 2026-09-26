@@ -2,6 +2,7 @@ import { hololiveEn } from './en';
 import { hololiveId } from './id';
 import { hololiveJp } from './jp';
 import { hololiveDevIs } from './dev_is';
+import { hololiveAsobiMawariTai } from './asobi';
 
 export const hololive: LiverData[] = [
   {
@@ -127,6 +128,20 @@ export const hololive: LiverData[] = [
     },
   },
   {
+    name: ['',''],
+    alias: [
+      ['あそびまわりたい！', 'アソビ★まわり隊！'],
+      ['あそびまわりたい', 'アソビ★まわり隊！'],
+    ],
+    marks: [],
+    tags: [['#アソビまわり隊', '一般']],
+    fans: [],
+    twitter: [['@ASOBIMAWARITAI', 'アソビ★まわり隊！【公式】']],
+    flags: {
+      isGroupName: true,
+    },
+  },
+  {
     name: ['ゆうじんえー', '友人A'],
     alias: [['えーちゃん', 'Aちゃん']],
     marks: ['👓'],
@@ -148,6 +163,7 @@ export const hololive: LiverData[] = [
 
   ...hololiveJp,
   ...hololiveDevIs,
+  ...hololiveAsobiMawariTai,
   ...hololiveId,
   ...hololiveEn,
 ];
